@@ -1,0 +1,36 @@
+{
+  "name": "@mmmmzxe/table-kit",
+  "version": "1.0.0",
+  "description": "A customizable React table kit with TailwindCSS and i18n support.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0",
+    "react-i18next": "^11.0.0",
+    "i18next": "^21.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmmmzxe/table-kit.git"
+  },
+  "author": "mmmmzxe <your-email@example.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "table",
+    "tailwindcss",
+    "i18n",
+    "component",
+    "datatable"
+  ]
+}
