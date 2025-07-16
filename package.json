@@ -1,6 +1,6 @@
 {
   "name": "@mmmmzxe/table-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable React table kit with TailwindCSS and i18n support.",
   "main": "dist/index.js",
   "module": "dist/index.js",
