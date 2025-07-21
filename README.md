@@ -29,14 +29,6 @@ A customizable and easy-to-use React component library for building tables with 
 npm install table-kit
 ```
 
-### Peer Dependencies
-
-This library uses `react-i18next` for translations. Make sure to install it in your project:
-
-```bash
-npm install react-i18next i18next
-```
-
 ---
 
 ## Usage
