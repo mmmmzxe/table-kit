@@ -75,8 +75,8 @@ export default function StandardTable<T extends object>({
       />
       <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
         <table className="w-full text-left border-collapse">
-          <thead className="hidden md:table-header-group bg-gray-50 dark:bg-gray-700">
-            <tr className="border-b-2 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 text-sm">
+        <thead className="hidden md:table-header-group bg-gray-50 dark:bg-gray-700">
+        <tr className="border-b-2 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 text-sm">
               {columns.map((col, idx) => (
                 <th key={idx} className={`p-3 font-semibold ${col.className || ''}`}>{col.label}</th>
               ))}
@@ -101,9 +101,11 @@ export default function StandardTable<T extends object>({
               data.map((row, idx) => (
                 <tr key={idx} className="hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 flex flex-col md:table-row border-b border-gray-200 dark:border-gray-700 md:border-b-0">
                   {columns.map((col, cidx) => (
-                    <td key={cidx} className={`p-3 flex md:table-cell  ${col.className || ''}`}>{
-                      col.render ? col.render(row, idx) : (row[col.key as keyof T] as React.ReactNode)
-                    }</td>
+                    <td key={cidx} className={`p-3 flex md:table-cell text-md  items-center gap-5  ${col.className || ''}`}> {
+                      <span className="block md:hidden font-semibold  text-gray-500 mb-1">{col.label}</span>
+                    }
+                    {col.render ? col.render(row, idx) : (row[col.key as keyof T] as React.ReactNode)}
+                    </td>
                   ))}
                 </tr>
               ))

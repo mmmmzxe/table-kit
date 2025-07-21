@@ -228,4 +228,3 @@ Contributions are welcome! Please open issues or submit pull requests for any fe
 
 ## License
 
-This project is licensed under the MIT License. 
